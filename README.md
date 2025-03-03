@@ -1,4 +1,4 @@
-# sl2: Low-Bitrate Image Compression with Attention-Based CNNs
+# ImgComp: Low-Bitrate Image Compression with Attention-Based CNNs
 
 ## Project Description
 
@@ -7,7 +7,7 @@ This project develops an innovative low-bitrate image compression model using Py
 ## Project Structure
 
 ```
-sl2/
+ImgComp/
 ├── src/
 │   ├── models/
 │   │   └── model.py          # Defines the attention-based CNN model architecture.
