@@ -104,6 +104,4 @@ The training script saves checkpoints of the model and optimizer state during tr
 
 Contributions to this project are welcome. Please submit pull requests with detailed descriptions of the changes.
 
-## License
 
-[Specify the license for the project]
