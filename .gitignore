@@ -1,0 +1,94 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.eggs/
+dist/
+build/
+wheels/
+*.egg-info/
+
+# PyInstaller
+#  Usually these files are written into a _MEIPASS folder in runtime.
+# _MEIPASS*
+#  Additionally, freeze archive (often as one single executable file)
+#   can be added to git.
+# *.exe
+# *.pkl
+# *.pth
+
+# Environments
+.env
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs
+/site
+
+# mypy
+.mypy_cache/
+mypy-report/
+mypy-html/
+
+# Environments
+.Python
+_build
+*.swp
+*~
+tmp*
+*.tmp
+
+# Logs
+*.log
+logs/
+
+# Checkpoints
+checkpoints/
+
+# Data
+data/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS generated files #
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Compiled Object files
+*.o
+*.obj
+*.dll
+*.exp
+*.lib
+*.manifest
+*.ilk
+*.pdb
+*.idb
+*.map
+*.sbr
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json

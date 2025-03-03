@@ -1,0 +1,47 @@
+# Configuration file for image compression model training
+
+# General settings
+project_name: sl2
+experiment_name: attention_cnn_experiment
+seed: 42
+use_cuda: false  # Set to false to force CPU usage
+
+# Data paths
+train_data_dir: data/MNIST/processed/training.pt  # Path to the training data directory
+val_data_dir: data/MNIST/processed/test.pt    # Path to the validation data directory
+
+# Model settings
+num_channels: 1           # Number of input channels (e.g., 3 for RGB)
+num_features: 64          # Number of feature maps in the convolutional layers
+reduction_ratio: 16       # Reduction ratio for channel attention
+num_attention_blocks: 2   # Number of attention blocks in the model
+
+# Training parameters
+batch_size: 32
+learning_rate: 0.001
+num_epochs: 10
+weight_decay: 0.0001      # L2 regularization
+clip_grad_norm: 1.0       # Gradient clipping value (set to None to disable)
+scheduler:
+  name: ReduceLROnPlateau # Options: ReduceLROnPlateau, CosineAnnealingLR, StepLR, None
+  params:
+    factor: 0.1           # Reduction factor for ReduceLROnPlateau
+    patience: 10          # Patience for ReduceLROnPlateau
+    # Other scheduler parameters can be added here
+
+# Checkpoint settings
+load_checkpoint: false     # Set to true to load a checkpoint
+checkpoint_path: checkpoints/best_model.pth  # Path to the checkpoint file
+
+# Logging settings
+log_file: logs/training.log  # Path to the log file
+logging_interval: 10       # Log training progress every N batches
+
+# Evaluation settings
+evaluation_interval: 1     # Evaluate the model every N epochs
+
+# Example Usage (in Python):
+# import yaml
+# with open('configs/config.yaml', 'r') as f:
+#     config = yaml.safe_load(f)
+# print(config['train_data_dir'])
