@@ -4,14 +4,14 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="sl2",  # Replace with your own username
+    name="ImgComp",  
     version="0.0.1",
-    author="Example Author",  # Replace with your name
-    author_email="author@example.com", # Replace with your email
+    author="krisanu801",  
+    author_email="krisanusarkar03@gmail.com",
     description="Low-Bitrate Image Compression with Attention-Based CNNs",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/your_username/sl2", # Replace with your repo URL
+    url="https://github.com/krisanu801/ImgComp", 
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
